@@ -1,0 +1,11 @@
+<hr />
+<p>structural-directives works!</p>
+
+<h1 *ngIf="onoffProp">ON</h1>
+<button (click)="OnOff()">OnOff</button>
+
+<br />
+Colors :
+<ul>
+  <li *ngFor="let color of bgColors">{{ color }}</li>
+</ul>

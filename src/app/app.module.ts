@@ -2,13 +2,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
-import { InlineTempComponent } from "./Examples/inline-temp/inline-temp.component";
-import { BasicsComponent } from './examples/basics/basics.component';
-import { BgcolorDirective } from './examples/bgcolor.directive';
+import { ExampleModule } from "./examples/example.module";
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, InlineTempComponent, BasicsComponent, BgcolorDirective],
-  imports: [BrowserModule],
+  declarations: [AppComponent, LoginComponent],
+  imports: [BrowserModule, ExampleModule],
   providers: [],
   bootstrap: [AppComponent]
 })
